@@ -1,27 +1,24 @@
 <!doctype html>
 <html lang="es">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
 <title>Fundación Blanca Rivera</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 <style>
-body{margin:0}img{max-width:100%}[hidden]{display:none!important}
-/* Layout: plum masthead carrying the logo, then alternating light bands; logo's five dots recur as section markers */
+html{background:#1a0b19}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+/* Single dark look on every device. Layout: plum masthead carrying the logo, then alternating bands; logo's five dots recur as section markers */
 :root{
-  --ground:#fbf7f9; --surface:#ffffff; --ink:#2a1428; --muted:#6b5568; --line:#ead9e4;
-  --plum:#3a1036; --plum-ink:#fbeff7; --magenta:#c0187c; --magenta-soft:#fbe3f0;
+  --ground:#1a0b19; --surface:#251323; --ink:#f6eaf2; --muted:#bfa6b9; --line:#3e2439;
+  --plum:#120610; --plum-ink:#fbeff7; --magenta:#f05aaf; --magenta-soft:#3a1630;
   --orange:#e2702c; --sky:#3fa9d4; --green:#6fb33f; --navy:#3d4c9e;
   --display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --body:"Figtree", "Helvetica Neue", Arial, system-ui, sans-serif;
   --max:1160px;
+  color-scheme:dark;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --ground:#1a0b19; --surface:#251323; --ink:#f6eaf2; --muted:#bfa6b9; --line:#3e2439;
-  --plum:#120610; --plum-ink:#fbeff7; --magenta:#f05aaf; --magenta-soft:#3a1630; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --ground:#1a0b19; --surface:#251323; --ink:#f6eaf2; --muted:#bfa6b9; --line:#3e2439;
-  --plum:#120610; --plum-ink:#fbeff7; --magenta:#f05aaf; --magenta-soft:#3a1630; color-scheme:dark}
+
 
 body{background:var(--ground);color:var(--ink);font:400 17px/1.6 var(--body);}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--plum)}
@@ -126,8 +123,7 @@ section{padding-block:88px}
 .prog details p{margin-top:8px}
 .prog.c1 .kicker{color:var(--orange)}.prog.c2 .kicker{color:var(--magenta)}.prog.c3 .kicker{color:var(--sky)}
 .prog.c4 .kicker{color:var(--green)}.prog.c5 .kicker{color:var(--navy)}
-:root[data-theme="dark"] .prog.c5 .kicker{color:#8f9cf0}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .prog.c5 .kicker{color:#8f9cf0}}
+.prog.c5 .kicker{color:#8f9cf0}
 .prog.cta{background:var(--magenta);color:#fff;border-color:transparent;justify-content:center}
 .prog.cta .body{justify-content:center;gap:16px}
 .prog.cta h3{font-size:30px}
